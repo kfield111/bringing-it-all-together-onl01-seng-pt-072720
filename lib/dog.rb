@@ -5,6 +5,7 @@ class Dog
     @id = id
     @name = name
     @breed = breed
+    @db = db
   end
 
 
