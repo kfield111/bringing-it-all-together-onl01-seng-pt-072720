@@ -85,13 +85,7 @@ class Dog
     end
 
     def find_or_create_by(name:, breed:)
-      sql <<-SQL
-      SELECT *
-      FROM dogs
-      WHERE name = ? AND breed = ?
-      SQL
-
-      DB[:conn].execute(sql, )
+      dog = DB[:conn].execute("SELECT * FROM dogs WHERE name = ? AND breed = ?", name, breed)
 
 
 end
