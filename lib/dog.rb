@@ -52,8 +52,6 @@ class Dog
       breed = row[2]
       self.new(name, breed, id)
       binding.pry
-      new_dog
-
     end
 
 
